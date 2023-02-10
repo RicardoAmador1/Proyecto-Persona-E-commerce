@@ -414,11 +414,32 @@ z-index: 1;
 /*_____________FORM__________________________________*/
 .form-inline{
   padding: 95px;
-  height: 220px;
+  height: 520px;
   margin: 10px;
 }
 
 .form-inline input{ width:min-content;}
+
+.range {
+  height: 120px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 0 65px 0 45px;
+  box-shadow: 2px 4px 8px  rgba(0, 0, 0, 0.1);
+}
+.sliderValue{
+  position: absolute;
+  height: 45px;
+  transform: translateX(-40%) scale(0);
+  font-weight: 500;
+  top: -20px; 
+  line-height: 55px;
+  z-index: 2;
+  color: var(--rich-black-fogra-29-1);
+  transition: transform 0.3 ease-in-out;
+
+}
+
 
 
 /*_____________#HERO__________________________________*/
@@ -672,4 +693,6 @@ z-index: 1;
     height: 10px;
     border-radius: inherit;
   }
+
+  /*_____________#FOOTER__________________________________*/
 

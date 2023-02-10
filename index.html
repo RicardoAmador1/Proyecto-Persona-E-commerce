@@ -103,24 +103,55 @@
 <!--
   #Form
 -->
-<form class="form-inline" id="form-inline">
+<div class="range-form">
+  <form class="form-inline" id="form-inline">
+
+    <h4 class="title">Logra tus metas con VSoFit </h4>
   
-  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
-  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-    <option selected>Choose...</option>
-    <option value="1">Adelgazar</option>
-    <option value="2">Aumentar masa muscular</option>
-    <option value="3">Mantenerte en forma</option>
-    <option value="4">Cambiar de habitos</option>
-  </select>
+    <div class="range">
+      <div class="sliderValue">
+        <span>100</span>
+      </div>
 
-  <div class="custom-control custom-checkbox my-1 mr-sm-2">
-    <input type="checkbox" class="custom-control-input" id="customControlInline">
-    <label class="custom-control-label" for="customControlInline">Acepto terminos y condiciones</label>
-  </div>
+      <div class="field">
 
-  <button type="submit" class="btn btn-primary my-1">Submit</button>
-</form>
+        <div class="value left" id="edad">80</div>
+        <input type="range" id="barra-edad" min="18" max="65" value="80" step="1">
+        
+      </div>
+    </div>
+    
+
+    
+  
+  
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sexo</label>
+    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+      <option selected>Selecciona...</option>
+      <option value="1">Mujer</option>
+      <option value="2">Hombre</option>
+      <option value="3">Privado</option>
+    </select>
+    
+    
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo de meta</label>
+    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+      <option selected>Selecciona...</option>
+      <option value="1">Adelgazar</option>
+      <option value="2">Aumentar masa muscular</option>
+      <option value="3">Mantenerte en forma</option>
+      <option value="4">Cambiar de habitos</option>
+    </select>
+  
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline">
+      <label class="custom-control-label" for="customControlInline">Acepto terminos y condiciones</label>
+    </div>
+  
+    <button type="submit" class="btn btn-primary my-1">Submit</button>
+  </form>
+
+</div>
 
 
   </div>
@@ -446,11 +477,113 @@
         </div>
       </section>
 
+    <!--#FOOTER-->
 
+    <footer class="footer">
+
+      <div class="selection footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+        <div class="contain">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+              <span class="span">VSoFit</span>
+            </a>
+
+            <p class="footer-brand-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptate maiores, sapiente recusandae omnis aliquam harum iusto ipsum libero debitis fugiat tempora exercitationem dolor.
+            </p>
+
+            <div class="wrapper">
+
+              <img src="./assets/images/footer-clock.png" width="34" loading="lazy" alt="Clock">
+
+              <ul class="footer-brand-list">
+
+                <li>
+                  <p class="footer-brand-title">Monday - Friday</p>
+
+                  <p class="footer-brand-text">7:00AM - 11:00PM</p>
+                </li>
+
+                <li>
+                  <p class="footer-brand-title">Saturday - Sunday</p>
+
+                  <p class="footer-brand-text">7:00AM - 2:00PM</p>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title has-before">Nuestros Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Sobre nosotros</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Clothes</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Supplemment</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title has-before">Nuestros Links</p>
+            </li>
+
+            <li class="footer-list-item">
+              <div class="icon">
+                <ion-icon name="location" aria-hidden="true"></ion-icon>
+              </div>
+
+              <address class="address footer-link">
+                Lorem ipsum 3454, Colony Lorem Ipsum, Guadalajara, Jalisco.
+              </address>
+            </li>
+  
+          </ul>
+
+
+        </div>
+      </div>
+
+    </footer>
 
 
 
     <script src="./assets/js/script.js" defer></script>
+    <script src="script.js" defer></script>
 
 
     <!----

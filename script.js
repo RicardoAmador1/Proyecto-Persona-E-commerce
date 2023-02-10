@@ -1,6 +1,6 @@
 'use sctrict';
 
-
+/*
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -22,7 +22,7 @@
 
 /**
  * add event on element
- */
+ *
 
  const addEventOnElem = function (elem, type, callback) {
     if (elem.length > 1) {
@@ -36,8 +36,31 @@
 
 
   /**
+   * #FORMS
+   *
+   const slideValue= document.querySelector("span");
+   const inputSlider=document.querySelector("input");
+   inputSlider.oninput = (() => {
+     let value = inputSlider.value;
+     slideValue.textContent = value;
+     slideValue.style.left = (value/2) + "%"
+     slideValue.classList.add("show");
+   });
+
+    inputSlider.onblur = (() => {
+      slideValue.classList.remove("show")
+    });
+
+    
+  
+ 
+
+
+
+
+  /**
    * navbar toggle
-   */
+   *
 
    const navbar = document.querySelector("[data-navbar]");
    const navTogglers = document.querySelectorAll("[data-nav-toggler]");
@@ -50,4 +73,13 @@
    const closeNavbar = function () { navbar.classList.remove("active"); }
    
    addEventOnElem(navLinks, "click", closeNavbar);
+*/
 
+const range = document.getElementById("barra-edad");
+const edad = document.getElementById("edad");
+
+  range.addEventListener("change", function (event) {
+    const selectedValue = event.target.value;
+
+    edad.innerText = selectedValue;
+  })
